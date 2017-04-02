@@ -1,0 +1,6 @@
+framework module Pods_Bear_River_Knives {
+  umbrella header "Pods-Bear River Knives-umbrella.h"
+
+  export *
+  module * { export * }
+}

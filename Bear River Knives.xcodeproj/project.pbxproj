@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DBA836B0AA8E37BFA5D0831 /* Pods_Bear_River_Knives.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF68DCF9F34813F52BAC152 /* Pods_Bear_River_Knives.framework */; };
+		E284F87E1E907FEB00787DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F87D1E907FEB00787DD1 /* AppDelegate.swift */; };
+		E284F8801E907FEB00787DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F87F1E907FEB00787DD1 /* ViewController.swift */; };
+		E284F8831E907FEB00787DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E284F8811E907FEB00787DD1 /* Main.storyboard */; };
+		E284F8851E907FEB00787DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E284F8841E907FEB00787DD1 /* Assets.xcassets */; };
+		E284F8881E907FEB00787DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E284F8861E907FEB00787DD1 /* LaunchScreen.storyboard */; };
+		E284F8921E908B5A00787DD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E284F8911E908B5A00787DD1 /* GoogleService-Info.plist */; };
+		E284F8941E908C3F00787DD1 /* LoginDIsc ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F8931E908C3F00787DD1 /* LoginDIsc ViewController.swift */; };
+		E284F8961E90958100787DD1 /* Discussion ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F8951E90958100787DD1 /* Discussion ViewController.swift */; };
+		E284F8981E909F1100787DD1 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F8971E909F1100787DD1 /* Channel.swift */; };
+		E284F89C1E90B35A00787DD1 /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F89B1E90B35A00787DD1 /* CreateChannelCell.swift */; };
+		E284F89E1E90BC7B00787DD1 /* Chat ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F89D1E90BC7B00787DD1 /* Chat ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080A6A1072C55274353F1383 /* Pods-Bear River Knives.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear River Knives.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives.debug.xcconfig"; sourceTree = "<group>"; };
+		960BF04473B806DEDAB10F82 /* Pods-Bear River Knives.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear River Knives.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives.release.xcconfig"; sourceTree = "<group>"; };
+		ABF68DCF9F34813F52BAC152 /* Pods_Bear_River_Knives.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bear_River_Knives.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E284F87A1E907FEB00787DD1 /* Bear River Knives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bear River Knives.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E284F87D1E907FEB00787DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E284F87F1E907FEB00787DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E284F8821E907FEB00787DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E284F8841E907FEB00787DD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E284F8871E907FEB00787DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E284F8891E907FEB00787DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E284F8911E908B5A00787DD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E284F8931E908C3F00787DD1 /* LoginDIsc ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginDIsc ViewController.swift"; sourceTree = "<group>"; };
+		E284F8951E90958100787DD1 /* Discussion ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Discussion ViewController.swift"; sourceTree = "<group>"; };
+		E284F8971E909F1100787DD1 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		E284F89B1E90B35A00787DD1 /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
+		E284F89D1E90BC7B00787DD1 /* Chat ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chat ViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E284F8771E907FEB00787DD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DBA836B0AA8E37BFA5D0831 /* Pods_Bear_River_Knives.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10E33B3A2278D058D13E12A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				080A6A1072C55274353F1383 /* Pods-Bear River Knives.debug.xcconfig */,
+				960BF04473B806DEDAB10F82 /* Pods-Bear River Knives.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B550E5B4169379AB5D35D1A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABF68DCF9F34813F52BAC152 /* Pods_Bear_River_Knives.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E284F8711E907FEB00787DD1 = {
+			isa = PBXGroup;
+			children = (
+				E284F87C1E907FEB00787DD1 /* Bear River Knives */,
+				E284F87B1E907FEB00787DD1 /* Products */,
+				10E33B3A2278D058D13E12A1 /* Pods */,
+				B550E5B4169379AB5D35D1A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E284F87B1E907FEB00787DD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E284F87A1E907FEB00787DD1 /* Bear River Knives.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E284F87C1E907FEB00787DD1 /* Bear River Knives */ = {
+			isa = PBXGroup;
+			children = (
+				E284F87D1E907FEB00787DD1 /* AppDelegate.swift */,
+				E284F87F1E907FEB00787DD1 /* ViewController.swift */,
+				E284F8811E907FEB00787DD1 /* Main.storyboard */,
+				E284F89D1E90BC7B00787DD1 /* Chat ViewController.swift */,
+				E284F89B1E90B35A00787DD1 /* CreateChannelCell.swift */,
+				E284F8951E90958100787DD1 /* Discussion ViewController.swift */,
+				E284F8971E909F1100787DD1 /* Channel.swift */,
+				E284F8931E908C3F00787DD1 /* LoginDIsc ViewController.swift */,
+				E284F8841E907FEB00787DD1 /* Assets.xcassets */,
+				E284F8861E907FEB00787DD1 /* LaunchScreen.storyboard */,
+				E284F8891E907FEB00787DD1 /* Info.plist */,
+				E284F8911E908B5A00787DD1 /* GoogleService-Info.plist */,
+			);
+			path = "Bear River Knives";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E284F8791E907FEB00787DD1 /* Bear River Knives */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E284F88C1E907FEB00787DD1 /* Build configuration list for PBXNativeTarget "Bear River Knives" */;
+			buildPhases = (
+				FA085B48C4202F7F06A51FBC /* [CP] Check Pods Manifest.lock */,
+				E284F8761E907FEB00787DD1 /* Sources */,
+				E284F8771E907FEB00787DD1 /* Frameworks */,
+				E284F8781E907FEB00787DD1 /* Resources */,
+				D280D86DDED5627B12C1D375 /* [CP] Embed Pods Frameworks */,
+				B2935704D6BDFD4038177DEC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bear River Knives";
+			productName = "Bear River Knives";
+			productReference = E284F87A1E907FEB00787DD1 /* Bear River Knives.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E284F8721E907FEB00787DD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ryan Garner USU";
+				TargetAttributes = {
+					E284F8791E907FEB00787DD1 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = C5YUFXP5P7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E284F8751E907FEB00787DD1 /* Build configuration list for PBXProject "Bear River Knives" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E284F8711E907FEB00787DD1;
+			productRefGroup = E284F87B1E907FEB00787DD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E284F8791E907FEB00787DD1 /* Bear River Knives */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E284F8781E907FEB00787DD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E284F8881E907FEB00787DD1 /* LaunchScreen.storyboard in Resources */,
+				E284F8921E908B5A00787DD1 /* GoogleService-Info.plist in Resources */,
+				E284F8851E907FEB00787DD1 /* Assets.xcassets in Resources */,
+				E284F8831E907FEB00787DD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2935704D6BDFD4038177DEC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D280D86DDED5627B12C1D375 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA085B48C4202F7F06A51FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E284F8761E907FEB00787DD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E284F8801E907FEB00787DD1 /* ViewController.swift in Sources */,
+				E284F8981E909F1100787DD1 /* Channel.swift in Sources */,
+				E284F8961E90958100787DD1 /* Discussion ViewController.swift in Sources */,
+				E284F8941E908C3F00787DD1 /* LoginDIsc ViewController.swift in Sources */,
+				E284F89E1E90BC7B00787DD1 /* Chat ViewController.swift in Sources */,
+				E284F87E1E907FEB00787DD1 /* AppDelegate.swift in Sources */,
+				E284F89C1E90B35A00787DD1 /* CreateChannelCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E284F8811E907FEB00787DD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E284F8821E907FEB00787DD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E284F8861E907FEB00787DD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E284F8871E907FEB00787DD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E284F88A1E907FEB00787DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E284F88B1E907FEB00787DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E284F88D1E907FEB00787DD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080A6A1072C55274353F1383 /* Pods-Bear River Knives.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C5YUFXP5P7;
+				INFOPLIST_FILE = "Bear River Knives/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "USU.Bear-River-Knives";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E284F88E1E907FEB00787DD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 960BF04473B806DEDAB10F82 /* Pods-Bear River Knives.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C5YUFXP5P7;
+				INFOPLIST_FILE = "Bear River Knives/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "USU.Bear-River-Knives";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E284F8751E907FEB00787DD1 /* Build configuration list for PBXProject "Bear River Knives" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E284F88A1E907FEB00787DD1 /* Debug */,
+				E284F88B1E907FEB00787DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E284F88C1E907FEB00787DD1 /* Build configuration list for PBXNativeTarget "Bear River Knives" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E284F88D1E907FEB00787DD1 /* Debug */,
+				E284F88E1E907FEB00787DD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E284F8721E907FEB00787DD1 /* Project object */;
+}

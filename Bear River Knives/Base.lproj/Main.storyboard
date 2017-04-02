@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bear River Knives-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bear_River_Knives" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FI8-LL-65I">
+                                <rect key="frame" x="0.0" y="72" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Kf1-Q0-B7f"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Mw-aD-eVb">
+                                <rect key="frame" x="0.0" y="259" width="375" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="4Co-hB-Yu3"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Q5b-PJ-VEg">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q5b-PJ-VEg" id="TfO-mi-nfk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="u6z-Hh-AfA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="t5F-1s-lSq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Mw-aD-eVb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ITD-h6-dzB"/>
+                            <constraint firstItem="FI8-LL-65I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MpN-s7-3Ap"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Mw-aD-eVb" secondAttribute="bottom" constant="8" symbolic="YES" id="Q03-Kl-mDK"/>
+                            <constraint firstItem="FI8-LL-65I" firstAttribute="leading" secondItem="5Mw-aD-eVb" secondAttribute="leading" id="VUT-1c-ePe"/>
+                            <constraint firstItem="FI8-LL-65I" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hFk-cF-1Pb"/>
+                            <constraint firstItem="5Mw-aD-eVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lDv-Sa-88b"/>
+                            <constraint firstItem="FI8-LL-65I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="xNC-At-59u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bear River Knives" id="Acx-Lp-b3E"/>
+                    <connections>
+                        <segue destination="5er-ur-fmN" kind="show" identifier="showLogin" id="xPV-AP-G18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1833" y="-17"/>
+        </scene>
+        <!--LoginD Isc View Controller-->
+        <scene sceneID="awv-j5-Nng">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" id="5er-ur-fmN" customClass="LoginDIsc_ViewController" customModule="Bear_River_Knives" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RKg-mf-qMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="WzO-dJ-tbE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aBA-dG-HvA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmw-GY-oKM">
+                                <rect key="frame" x="168" y="335" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginTouched:" destination="5er-ur-fmN" eventType="touchUpInside" id="83c-Gg-lRB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a username to use" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sk-Ez-g1q">
+                                <rect key="frame" x="95" y="314" width="185.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bear River Knives Discussions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnY-Nu-HfU">
+                                <rect key="frame" x="73" y="111" width="229" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fnc-gH-VOl">
+                                <rect key="frame" x="62" y="132" width="250" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="pkm-sB-nB1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dnY-Nu-HfU" firstAttribute="centerX" secondItem="aBA-dG-HvA" secondAttribute="centerX" id="3b2-mz-c5i"/>
+                            <constraint firstItem="fnc-gH-VOl" firstAttribute="centerX" secondItem="aBA-dG-HvA" secondAttribute="centerX" id="Tc5-oj-gpI"/>
+                            <constraint firstItem="fnc-gH-VOl" firstAttribute="top" secondItem="dnY-Nu-HfU" secondAttribute="bottom" id="acM-YV-RJP"/>
+                            <constraint firstItem="WzO-dJ-tbE" firstAttribute="top" secondItem="Zmw-GY-oKM" secondAttribute="bottom" constant="302" id="csR-MY-zxh"/>
+                            <constraint firstItem="4sk-Ez-g1q" firstAttribute="centerX" secondItem="aBA-dG-HvA" secondAttribute="centerX" id="eNP-0O-U50"/>
+                            <constraint firstItem="4sk-Ez-g1q" firstAttribute="top" secondItem="fnc-gH-VOl" secondAttribute="bottom" id="gvL-cd-g59"/>
+                            <constraint firstItem="Zmw-GY-oKM" firstAttribute="centerX" secondItem="aBA-dG-HvA" secondAttribute="centerX" id="h7A-dP-bZE"/>
+                            <constraint firstItem="dnY-Nu-HfU" firstAttribute="top" secondItem="RKg-mf-qMf" secondAttribute="bottom" constant="91" id="qZp-Ib-8aL"/>
+                            <constraint firstItem="Zmw-GY-oKM" firstAttribute="top" secondItem="4sk-Ez-g1q" secondAttribute="bottom" id="udF-Pf-dTP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="usernameField" destination="fnc-gH-VOl" id="xIf-UX-u5F"/>
+                        <segue destination="Dt8-WO-XhA" kind="show" identifier="showDiscussion" id="4NH-DS-7pN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aA8-MD-kyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2653.5999999999999" y="-254.12293853073464"/>
+        </scene>
+        <!--Discussion View Controller-->
+        <scene sceneID="wmN-Eh-LFA">
+            <objects>
+                <viewController storyboardIdentifier="discussionsViewController" id="Oen-6o-M53" customClass="Discussion_ViewController" customModule="Bear_River_Knives" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBg-gl-EWP"/>
+                        <viewControllerLayoutGuide type="bottom" id="QH8-sg-3dc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xTh-Z2-DTV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Wb-IV-rbZ">
+                                <rect key="frame" x="0.0" y="102" width="375" height="565"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewChannel" id="C6o-m1-9hU" customClass="CreateChannelCell" customModule="Bear_River_Knives" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C6o-m1-9hU" id="0TL-MZ-ZT3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-ar-Vxs">
+                                                    <rect key="frame" x="292" y="5" width="46" height="30"/>
+                                                    <state key="normal" title="Create"/>
+                                                    <connections>
+                                                        <action selector="createDiscussion:" destination="Oen-6o-M53" eventType="touchUpInside" id="wW3-Tl-LON"/>
+                                                    </connections>
+                                                </button>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVz-mK-eyW">
+                                                    <rect key="frame" x="102" y="5" width="171" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="171" id="Z75-Eq-F4k"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HVz-mK-eyW" firstAttribute="leading" secondItem="0TL-MZ-ZT3" secondAttribute="leadingMargin" constant="94" id="7ig-9i-avH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Zkv-ar-Vxs" secondAttribute="trailing" constant="29" id="FIs-az-x8k"/>
+                                                <constraint firstItem="Zkv-ar-Vxs" firstAttribute="top" secondItem="0TL-MZ-ZT3" secondAttribute="topMargin" constant="-3" id="LHx-v3-Irw"/>
+                                                <constraint firstItem="HVz-mK-eyW" firstAttribute="leading" secondItem="0TL-MZ-ZT3" secondAttribute="leadingMargin" constant="94" id="X8E-Fk-Pfe"/>
+                                                <constraint firstItem="HVz-mK-eyW" firstAttribute="centerX" secondItem="0TL-MZ-ZT3" secondAttribute="centerX" id="XrO-RU-a2e"/>
+                                                <constraint firstItem="HVz-mK-eyW" firstAttribute="top" secondItem="0TL-MZ-ZT3" secondAttribute="topMargin" constant="-3" id="eU7-1N-AqU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="createChannelButton" destination="Zkv-ar-Vxs" id="fgC-Gh-lwc"/>
+                                            <outlet property="newChannelNameField" destination="HVz-mK-eyW" id="Mvi-ea-RV9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExistingChannel" id="te8-fJ-nod">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="te8-fJ-nod" id="PQa-99-u68">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Oen-6o-M53" id="YiF-Bp-W1q"/>
+                                    <outlet property="delegate" destination="Oen-6o-M53" id="c3f-w5-Sd7"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8K3-71-IpC">
+                                <rect key="frame" x="170" y="72" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="Oen-6o-M53" eventType="touchUpInside" id="2dT-h4-qAA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8K3-71-IpC" firstAttribute="top" secondItem="hBg-gl-EWP" secondAttribute="bottom" constant="8" id="KvH-rl-Szj"/>
+                            <constraint firstItem="2Wb-IV-rbZ" firstAttribute="top" secondItem="8K3-71-IpC" secondAttribute="bottom" id="Lqt-Pu-hAI"/>
+                            <constraint firstItem="QH8-sg-3dc" firstAttribute="top" secondItem="2Wb-IV-rbZ" secondAttribute="bottom" id="WJQ-RW-rE3"/>
+                            <constraint firstItem="2Wb-IV-rbZ" firstAttribute="width" secondItem="xTh-Z2-DTV" secondAttribute="width" id="Ymm-Ry-zl6"/>
+                            <constraint firstItem="2Wb-IV-rbZ" firstAttribute="centerX" secondItem="xTh-Z2-DTV" secondAttribute="centerX" id="eSq-yA-QSD"/>
+                            <constraint firstItem="8K3-71-IpC" firstAttribute="centerX" secondItem="xTh-Z2-DTV" secondAttribute="centerX" id="j7j-9r-HGO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7mn-sr-Jvl"/>
+                    <connections>
+                        <outlet property="tableView" destination="2Wb-IV-rbZ" id="29m-QO-c1o"/>
+                        <segue destination="mt1-1R-5gs" kind="show" identifier="showChat" id="SD7-jZ-yX5"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showMain" id="8XV-qZ-flD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saw-yW-rDe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4632.8000000000002" y="-254.12293853073464"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="MTi-yO-Os1">
+            <objects>
+                <viewController storyboardIdentifier="chatViewController" id="mt1-1R-5gs" customClass="Chat_ViewController" customModule="Bear_River_Knives" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rc0-j4-m2N"/>
+                        <viewControllerLayoutGuide type="bottom" id="9GL-Ia-So7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UuY-Te-1QB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7o-B1-QHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6304.8000000000002" y="-327.88605697151428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GLu-RX-5fx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dt8-WO-XhA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fiM-FK-zIH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Oen-6o-M53" kind="relationship" relationship="rootViewController" id="NeE-vv-Ve5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zUM-6Y-BcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3693.5999999999999" y="-254.12293853073464"/>
+        </scene>
+    </scenes>
+</document>
