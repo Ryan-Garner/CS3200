@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4DBA836B0AA8E37BFA5D0831 /* Pods_Bear_River_Knives.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF68DCF9F34813F52BAC152 /* Pods_Bear_River_Knives.framework */; };
+		E2188D871EA6E3FC00BB29D7 /* Contstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2188D861EA6E3FC00BB29D7 /* Contstants.swift */; };
+		E2188D891EA6E58200BB29D7 /* InstagramLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2188D881EA6E58200BB29D7 /* InstagramLoginVC.swift */; };
 		E284F87E1E907FEB00787DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F87D1E907FEB00787DD1 /* AppDelegate.swift */; };
 		E284F8801E907FEB00787DD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E284F87F1E907FEB00787DD1 /* ViewController.swift */; };
 		E284F8831E907FEB00787DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E284F8811E907FEB00787DD1 /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		080A6A1072C55274353F1383 /* Pods-Bear River Knives.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear River Knives.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives.debug.xcconfig"; sourceTree = "<group>"; };
 		960BF04473B806DEDAB10F82 /* Pods-Bear River Knives.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear River Knives.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives.release.xcconfig"; sourceTree = "<group>"; };
 		ABF68DCF9F34813F52BAC152 /* Pods_Bear_River_Knives.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bear_River_Knives.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2188D861EA6E3FC00BB29D7 /* Contstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contstants.swift; sourceTree = "<group>"; };
+		E2188D881EA6E58200BB29D7 /* InstagramLoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginVC.swift; sourceTree = "<group>"; };
 		E284F87A1E907FEB00787DD1 /* Bear River Knives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bear River Knives.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E284F87D1E907FEB00787DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E284F87F1E907FEB00787DD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				E284F87D1E907FEB00787DD1 /* AppDelegate.swift */,
 				E284F87F1E907FEB00787DD1 /* ViewController.swift */,
 				E284F8811E907FEB00787DD1 /* Main.storyboard */,
+				E2188D861EA6E3FC00BB29D7 /* Contstants.swift */,
+				E2188D881EA6E58200BB29D7 /* InstagramLoginVC.swift */,
 				E284F89D1E90BC7B00787DD1 /* Chat ViewController.swift */,
 				E284F89B1E90B35A00787DD1 /* CreateChannelCell.swift */,
 				E284F8951E90958100787DD1 /* Discussion ViewController.swift */,
@@ -235,9 +241,11 @@
 				E284F8981E909F1100787DD1 /* Channel.swift in Sources */,
 				E284F8961E90958100787DD1 /* Discussion ViewController.swift in Sources */,
 				E284F8941E908C3F00787DD1 /* LoginDIsc ViewController.swift in Sources */,
+				E2188D871EA6E3FC00BB29D7 /* Contstants.swift in Sources */,
 				E284F89E1E90BC7B00787DD1 /* Chat ViewController.swift in Sources */,
 				E284F87E1E907FEB00787DD1 /* AppDelegate.swift in Sources */,
 				E284F89C1E90B35A00787DD1 /* CreateChannelCell.swift in Sources */,
+				E2188D891EA6E58200BB29D7 /* InstagramLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

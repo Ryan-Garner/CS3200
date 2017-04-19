@@ -52,6 +52,10 @@ extension ViewController: UITableViewDelegate {
         if(main_table[indexPath.row] == "Knife Discussions"){
                 self.performSegue(withIdentifier: "showLogin", sender: nil)
         }
+        
+        if(main_table[indexPath.row] == "Instagram Pictures"){
+            self.performSegue(withIdentifier: "showInstaLogin", sender: nil)
+        }
     }
 }
 

@@ -64,11 +64,51 @@
                     <navigationItem key="navigationItem" title="Bear River Knives" id="Acx-Lp-b3E"/>
                     <connections>
                         <segue destination="5er-ur-fmN" kind="show" identifier="showLogin" id="xPV-AP-G18"/>
+                        <segue destination="87w-lT-Pa5" kind="show" identifier="showInstaLogin" id="81I-7x-xrO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1833" y="-17"/>
+        </scene>
+        <!--Instagram LoginVC-->
+        <scene sceneID="qmM-Ja-l9y">
+            <objects>
+                <viewController id="87w-lT-Pa5" customClass="InstagramLoginVC" customModule="Bear_River_Knives" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQD-D1-ZGY"/>
+                        <viewControllerLayoutGuide type="bottom" id="63e-qF-68p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W9I-JI-pd6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H05-dU-rG2">
+                                <rect key="frame" x="0.0" y="44" width="375" height="152"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="zTn-1z-OmP">
+                                <rect key="frame" x="177" y="449" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zTn-1z-OmP" firstAttribute="centerX" secondItem="W9I-JI-pd6" secondAttribute="centerX" id="2GP-08-pxA"/>
+                            <constraint firstItem="H05-dU-rG2" firstAttribute="centerX" secondItem="W9I-JI-pd6" secondAttribute="centerX" id="5Jm-bZ-EXf"/>
+                            <constraint firstItem="63e-qF-68p" firstAttribute="top" secondItem="zTn-1z-OmP" secondAttribute="bottom" constant="198" id="cEQ-ag-jdI"/>
+                            <constraint firstItem="H05-dU-rG2" firstAttribute="width" secondItem="W9I-JI-pd6" secondAttribute="width" id="mcr-5i-Mle"/>
+                            <constraint firstItem="H05-dU-rG2" firstAttribute="top" secondItem="pQD-D1-ZGY" secondAttribute="bottom" constant="24" id="oVn-9O-SrJ"/>
+                            <constraint firstItem="zTn-1z-OmP" firstAttribute="top" secondItem="H05-dU-rG2" secondAttribute="bottom" constant="253" id="zXI-SS-Nvy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginActivityIndicator" destination="zTn-1z-OmP" id="Zgd-eT-SMA"/>
+                        <outlet property="loginWebView" destination="H05-dU-rG2" id="GSH-D6-idA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVr-IA-1ul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5999999999999" y="461.91904047976016"/>
         </scene>
         <!--LoginD Isc View Controller-->
         <scene sceneID="awv-j5-Nng">
