@@ -21,5 +21,5 @@ struct INSTAGRAM_IDS {
     
     static let INSTAGRAM_ACCESS_TOKEN =  "access_token"
     
-    static let INSTAGRAM_SCOPE = "likes+comments+relationships"
+    static let INSTAGRAM_SCOPE = "likes+comments+relationships+public_content"
 }

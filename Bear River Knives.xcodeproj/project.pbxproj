@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FFBF4DD1EA801BC0080CDF2 /* BioandOrderingVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBF4DC1EA801BC0080CDF2 /* BioandOrderingVCViewController.swift */; };
+		3FFBF4DF1EA805720080CDF2 /* projectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBF4DE1EA805720080CDF2 /* projectsVC.swift */; };
+		3FFBF4E21EA82FC20080CDF2 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBF4E01EA82FC20080CDF2 /* CustomCell.swift */; };
+		3FFBF4E31EA82FC20080CDF2 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FFBF4E11EA82FC20080CDF2 /* CustomCell.xib */; };
 		4DBA836B0AA8E37BFA5D0831 /* Pods_Bear_River_Knives.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF68DCF9F34813F52BAC152 /* Pods_Bear_River_Knives.framework */; };
 		E2188D871EA6E3FC00BB29D7 /* Contstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2188D861EA6E3FC00BB29D7 /* Contstants.swift */; };
 		E2188D891EA6E58200BB29D7 /* InstagramLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2188D881EA6E58200BB29D7 /* InstagramLoginVC.swift */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		080A6A1072C55274353F1383 /* Pods-Bear River Knives.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear River Knives.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives.debug.xcconfig"; sourceTree = "<group>"; };
+		3FFBF4DC1EA801BC0080CDF2 /* BioandOrderingVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioandOrderingVCViewController.swift; sourceTree = "<group>"; };
+		3FFBF4DE1EA805720080CDF2 /* projectsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = projectsVC.swift; sourceTree = "<group>"; };
+		3FFBF4E01EA82FC20080CDF2 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3FFBF4E11EA82FC20080CDF2 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		960BF04473B806DEDAB10F82 /* Pods-Bear River Knives.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bear River Knives.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bear River Knives/Pods-Bear River Knives.release.xcconfig"; sourceTree = "<group>"; };
 		ABF68DCF9F34813F52BAC152 /* Pods_Bear_River_Knives.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bear_River_Knives.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2188D861EA6E3FC00BB29D7 /* Contstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contstants.swift; sourceTree = "<group>"; };
@@ -97,6 +105,10 @@
 				E284F87D1E907FEB00787DD1 /* AppDelegate.swift */,
 				E284F87F1E907FEB00787DD1 /* ViewController.swift */,
 				E284F8811E907FEB00787DD1 /* Main.storyboard */,
+				3FFBF4DE1EA805720080CDF2 /* projectsVC.swift */,
+				3FFBF4E01EA82FC20080CDF2 /* CustomCell.swift */,
+				3FFBF4E11EA82FC20080CDF2 /* CustomCell.xib */,
+				3FFBF4DC1EA801BC0080CDF2 /* BioandOrderingVCViewController.swift */,
 				E2188D861EA6E3FC00BB29D7 /* Contstants.swift */,
 				E2188D881EA6E58200BB29D7 /* InstagramLoginVC.swift */,
 				E284F89D1E90BC7B00787DD1 /* Chat ViewController.swift */,
@@ -175,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFBF4E31EA82FC20080CDF2 /* CustomCell.xib in Resources */,
 				E284F8881E907FEB00787DD1 /* LaunchScreen.storyboard in Resources */,
 				E284F8921E908B5A00787DD1 /* GoogleService-Info.plist in Resources */,
 				E284F8851E907FEB00787DD1 /* Assets.xcassets in Resources */,
@@ -237,14 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFBF4DD1EA801BC0080CDF2 /* BioandOrderingVCViewController.swift in Sources */,
 				E284F8801E907FEB00787DD1 /* ViewController.swift in Sources */,
 				E284F8981E909F1100787DD1 /* Channel.swift in Sources */,
 				E284F8961E90958100787DD1 /* Discussion ViewController.swift in Sources */,
 				E284F8941E908C3F00787DD1 /* LoginDIsc ViewController.swift in Sources */,
+				3FFBF4DF1EA805720080CDF2 /* projectsVC.swift in Sources */,
 				E2188D871EA6E3FC00BB29D7 /* Contstants.swift in Sources */,
 				E284F89E1E90BC7B00787DD1 /* Chat ViewController.swift in Sources */,
 				E284F87E1E907FEB00787DD1 /* AppDelegate.swift in Sources */,
 				E284F89C1E90B35A00787DD1 /* CreateChannelCell.swift in Sources */,
+				3FFBF4E21EA82FC20080CDF2 /* CustomCell.swift in Sources */,
 				E2188D891EA6E58200BB29D7 /* InstagramLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +390,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C5YUFXP5P7;
 				INFOPLIST_FILE = "Bear River Knives/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "USU.Bear-River-Knives";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +407,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C5YUFXP5P7;
 				INFOPLIST_FILE = "Bear River Knives/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "USU.Bear-River-Knives";
 				PRODUCT_NAME = "$(TARGET_NAME)";

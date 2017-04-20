@@ -14,21 +14,29 @@ class InstagramLoginVC: UIViewController, UIWebViewDelegate {
     @IBOutlet weak var loginWebView: UIWebView!
     @IBOutlet weak var loginActivityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var nextButton: UIButton!
+    
+    
+    var projectImages = [String]()
+    
     func unSignedRequest() {
         let authURL = String(format: "%@?client_id=%@&redirect_uri=%@&response_type=token&scope=%@&DEBUG=True", arguments: [INSTAGRAM_IDS.INSTAGRAM_AUTHURL,INSTAGRAM_IDS.INSTAGRAM_CLIENT_ID,INSTAGRAM_IDS.INSTAGRAM_REDIRECT_URI, INSTAGRAM_IDS.INSTAGRAM_SCOPE ])
         
         let urlRequest = URLRequest.init(url: URL.init(string: authURL)!)
         loginWebView.loadRequest(urlRequest)
     }
-    
+    func check(){
+        if !projectImages.isEmpty {
+            performSegue(withIdentifier: "showProjects", sender: self)
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         loginWebView.delegate = self
         
         unSignedRequest()
-
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,11 +50,13 @@ class InstagramLoginVC: UIViewController, UIWebViewDelegate {
     
     func webViewDidStartLoad(_ webView: UIWebView) {
         loginActivityIndicator.isHidden = false
+        nextButton.isHidden = true
         loginActivityIndicator.startAnimating()
     }
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         loginActivityIndicator.isHidden = true
+        nextButton.isHidden = false
         loginActivityIndicator.stopAnimating()
     }
     
@@ -65,11 +75,66 @@ class InstagramLoginVC: UIViewController, UIWebViewDelegate {
         return true
     }
     
+    
+    
     func handleAuth(authToken: String) {
         print("Instagram authentication token ==", authToken)
+        
+        let urlString =  "https://api.instagram.com/v1/users/4167825185/media/recent/?access_token=" + authToken
+        let urlRequest = URL(string: urlString)
+        //print("\(urlRequest)")
+        
+        let task = URLSession.shared.dataTask(with: urlRequest!) { (data, response, error) in
+            
+            guard let data = data,
+                 error == nil else{
+                    if let error = error {
+                        print("Error \(error.localizedDescription)")
+                    }
+                    return
+            }
+            //print(NSString(data: data, encoding: String.Encoding.utf8.rawValue) as Any)
+            guard let raw = try? JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers),
+                let json = raw as? [String: AnyObject] else {
+                return
+            }
+            self.projectImages = self.parseJSON(json: json)
+        }
+        task.resume()
     }
     
+    
+    func parseJSON(json: [String: AnyObject]) ->  [String]{
+        var images = [String]()
+        guard let jsonImages = json["data"] as? [[String: AnyObject]] else {
+            return images
+        }
+        for jsonImage in jsonImages {
+            guard let image = jsonImage["images"] as? [String: AnyObject],
+            let imageRes = image["standard_resolution"] as? [String: AnyObject],
+                let imageURL = imageRes["url"] as? String else {
+                    return images
+            }
+            
+            images.append(imageURL)
+        }
+        
+        return images
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showProjects",
+            let showP = segue.destination as? projectsVC{
+            for item in projectImages {
+                showP.pics.append(item)
+            }
+        }
+    }
+    @IBAction func nextTouched(_ sender: Any) {
+        if !projectImages.isEmpty {
+            performSegue(withIdentifier: "showProjects", sender: self)
+        }
+    }
     /*
     // MARK: - Navigation
 
