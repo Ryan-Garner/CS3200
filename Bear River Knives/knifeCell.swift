@@ -28,6 +28,7 @@ class knifeCell: UITableViewCell {
     }
     
     func updateUI(){
+        print(cellPic!)
         knifeImage.image = UIImage(named: cellPic!)
         knifeText.text = cellText
     }

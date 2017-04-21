@@ -12,8 +12,11 @@ class ViewController: UIViewController {
     
     var main_table = ["Knives", "Bio and Ordering info", "Knife Discussions", "Instagram Pictures"]
 
+    @IBOutlet weak var bearImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        bearImage.image = UIImage(named: "BearRiverKnives")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -55,6 +58,10 @@ extension ViewController: UITableViewDelegate {
         
         if(main_table[indexPath.row] == "Instagram Pictures"){
             self.performSegue(withIdentifier: "showInstaLogin", sender: nil)
+        }
+        
+        if(main_table[indexPath.row] == "Knives"){
+            self.performSegue(withIdentifier: "showKnives", sender: nil)
         }
         
         if(main_table[indexPath.row] == "Bio and Ordering info"){
