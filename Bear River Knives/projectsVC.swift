@@ -12,6 +12,7 @@ class projectsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var pics = [String]()
+    var caps = [String]()
     let cellReuseIdentifier = "cCell"
     
     override func viewDidLoad() {
@@ -50,6 +51,7 @@ extension projectsVC: UITableViewDataSource {
         cell.currIndexPath = indexPath
         print(pics[indexPath.row])
         cell.cellImage = pics[indexPath.row]
+        cell.cellCaption = caps[indexPath.row]
         return cell
     }
 }

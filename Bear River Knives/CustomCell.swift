@@ -12,6 +12,7 @@ class CustomCell: UITableViewCell {
 
     
     @IBOutlet weak var projectImage: UIImageView!
+    @IBOutlet weak var projectText: UITextView!
     
     var currIndexPath: IndexPath? {
         didSet {
@@ -25,8 +26,14 @@ class CustomCell: UITableViewCell {
         }
     }
     
+    var cellCaption: String?{
+        didSet{
+            updateUI()
+        }
+    }
+    
     func updateUI() {
-
+        projectText.text = cellCaption
         if let urlString = cellImage {
             downLoadImage(urlString: urlString)
         }else{

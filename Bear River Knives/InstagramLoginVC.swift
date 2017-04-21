@@ -18,6 +18,7 @@ class InstagramLoginVC: UIViewController, UIWebViewDelegate {
     
     
     var projectImages = [String]()
+    var projectCaptions = [String]()
     
     func unSignedRequest() {
         let authURL = String(format: "%@?client_id=%@&redirect_uri=%@&response_type=token&scope=%@&DEBUG=True", arguments: [INSTAGRAM_IDS.INSTAGRAM_AUTHURL,INSTAGRAM_IDS.INSTAGRAM_CLIENT_ID,INSTAGRAM_IDS.INSTAGRAM_REDIRECT_URI, INSTAGRAM_IDS.INSTAGRAM_SCOPE ])
@@ -99,6 +100,7 @@ class InstagramLoginVC: UIViewController, UIWebViewDelegate {
                 return
             }
             self.projectImages = self.parseJSON(json: json)
+            self.projectCaptions = self.parseCaption(json: json)
         }
         task.resume()
     }
@@ -121,12 +123,32 @@ class InstagramLoginVC: UIViewController, UIWebViewDelegate {
         
         return images
     }
+    
+    func parseCaption(json: [String: AnyObject]) ->  [String]{
+        var captions = [String]()
+        guard let jsonCaptions = json["data"] as? [[String: AnyObject]] else {
+            return captions
+        }
+        for jsonCaption in jsonCaptions {
+            guard let caption = jsonCaption["caption"] as? [String: AnyObject],
+                let captionText = caption["text"] as? String else {
+                    return captions
+            }
+            
+            captions.append(captionText)
+        }
+        
+        return captions
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showProjects",
             let showP = segue.destination as? projectsVC{
             for item in projectImages {
                 showP.pics.append(item)
+            }
+            for thing in projectCaptions {
+                showP.caps.append(thing)
             }
         }
     }
