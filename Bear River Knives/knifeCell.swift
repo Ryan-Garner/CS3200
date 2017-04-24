@@ -12,6 +12,7 @@ class knifeCell: UITableViewCell {
 
     @IBOutlet weak var knifeImage: UIImageView!
     
+    
     @IBOutlet weak var knifeText: UITextView!
     
     var cellPic: String?{
@@ -28,7 +29,6 @@ class knifeCell: UITableViewCell {
     }
     
     func updateUI(){
-        print(cellPic!)
         knifeImage.image = UIImage(named: cellPic!)
         knifeText.text = cellText
     }

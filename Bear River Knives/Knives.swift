@@ -47,8 +47,9 @@ extension Knives: UITableViewDataSource {
         return knifePics.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! knifeCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "kCell", for: indexPath) as! knifeCell
         cell.cellPic = knifePics[indexPath.row]
         cell.cellText = knifeDescription[indexPath.row]
         return cell

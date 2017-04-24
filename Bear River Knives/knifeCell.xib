@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,15 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="353"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="353"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="352"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUo-fV-zw4">
-                        <rect key="frame" x="0.0" y="8" width="320" height="159"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUo-fV-zw4">
+                        <rect key="frame" x="0.0" y="19" width="320" height="159"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="159" id="wKo-EA-tWH"/>
+                        </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jhA-aR-XjU">
-                        <rect key="frame" x="0.0" y="201" width="320" height="128"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-9d-Pxm">
+                        <rect key="frame" x="40" y="191" width="240" height="128"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -31,12 +34,17 @@
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="eUo-fV-zw4" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="Hr9-al-j4y"/>
+                    <constraint firstItem="eUo-fV-zw4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NKk-vS-xWw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eUo-fV-zw4" secondAttribute="bottom" constant="166" id="dEq-UI-h3E"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="knifeImage" destination="eUo-fV-zw4" id="Gfm-JJ-VOz"/>
-                <outlet property="knifeText" destination="jhA-aR-XjU" id="4Oy-WR-h3z"/>
+                <outlet property="knifeText" destination="Xhf-9d-Pxm" id="L2f-Aa-eSv"/>
             </connections>
-            <point key="canvasLocation" x="251" y="-156"/>
+            <point key="canvasLocation" x="251" y="-156.5"/>
         </tableViewCell>
     </objects>
 </document>
