@@ -20,14 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eUo-fV-zw4">
-                        <rect key="frame" x="0.0" y="19" width="320" height="159"/>
+                        <rect key="frame" x="70" y="19" width="180" height="159"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="159" id="wKo-EA-tWH"/>
+                            <constraint firstAttribute="height" constant="159" id="mJg-Hq-G1L"/>
+                            <constraint firstAttribute="width" constant="180" id="tVn-qM-7GI"/>
                         </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-9d-Pxm">
-                        <rect key="frame" x="40" y="191" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-9d-Pxm">
+                        <rect key="frame" x="0.0" y="191" width="320" height="128"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -35,9 +35,12 @@
                     </textView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="eUo-fV-zw4" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="Hr9-al-j4y"/>
-                    <constraint firstItem="eUo-fV-zw4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NKk-vS-xWw"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="eUo-fV-zw4" secondAttribute="bottom" constant="166" id="dEq-UI-h3E"/>
+                    <constraint firstItem="eUo-fV-zw4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="4Ku-y3-Tup"/>
+                    <constraint firstItem="Xhf-9d-Pxm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4hY-2Z-qhF"/>
+                    <constraint firstItem="Xhf-9d-Pxm" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="G3J-iy-13b"/>
+                    <constraint firstItem="eUo-fV-zw4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ROe-sp-mhL"/>
+                    <constraint firstItem="Xhf-9d-Pxm" firstAttribute="top" secondItem="eUo-fV-zw4" secondAttribute="bottom" constant="13" id="V0z-bd-6ux"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Xhf-9d-Pxm" secondAttribute="bottom" constant="25" id="uyS-2K-SGQ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
